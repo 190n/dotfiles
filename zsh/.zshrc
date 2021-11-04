@@ -57,11 +57,18 @@ alias gcam='git commit -am'
 alias gp='git push'
 alias gl='git log --oneline'
 
+# easy clipboard
+alias xc='xclip -i -selection clipboard'
+alias xv='xclip -o -selection clipboard'
+alias xvimg='xclip -o -selection clipboard -target image/png'
+
 # https://stackoverflow.com/a/3964198
 function chpwd() {
 	emulate -L zsh
 	ls --group-directories-first -N --color=auto
 }
+
+eval "$(rbenv init -)"
 
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
