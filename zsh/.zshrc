@@ -82,3 +82,7 @@ bindkey '\e[3~'   delete-char        # Linux console, xterm, gnome-terminal
 bindkey '\e[4~'   end-of-line        # Linux console
 bindkey '\e[F'    end-of-line        # xterm
 bindkey '\eOF'    end-of-line        # gnome-terminal
+
+# https://unix.stackexchange.com/a/140499
+bindkey "^[[1;5C" forward-word
+bindkey "^[[1;5D" backward-word
