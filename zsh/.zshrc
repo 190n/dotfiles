@@ -51,11 +51,11 @@ alias ffplay='ffplay -hide_banner'
 
 alias gs='git status'
 alias ga='git add'
-alias gc='git commit'
-alias gcm='git commit -m'
-alias gcam='git commit -am'
+alias gc='git commit -m'
+alias gca='git commit -am'
 alias gp='git push'
 alias gl='git log --oneline'
+alias gcl='git clone'
 
 # easy clipboard
 alias xc='xclip -i -selection clipboard'
